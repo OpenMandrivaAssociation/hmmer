@@ -12,7 +12,6 @@ License:	GPL
 URL:		http://hmmer.janelia.org
 Source:		ftp://selab.janelia.org/pub/software/%{name}/%{version}/%{name}-%{version}.tar.bz2
 Patch:		%{name}-2.3.2.makefile.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Profile hidden Markov models (profile HMMs) can be used to do sensitive
