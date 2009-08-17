@@ -1,6 +1,6 @@
 %define name		hmmer
 %define version		2.3.2
-%define rel		4
+%define rel		5
 %define release		%mkrel %{rel}
 
 Name:		%{name}
@@ -25,7 +25,7 @@ software for protein sequence analysis.
 %patch
 
 %build
-%configure
+./configure --prefix=/usr --mandir=/usr/share/man
 %make
 
 %install
