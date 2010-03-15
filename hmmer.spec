@@ -1,6 +1,6 @@
 %define name		hmmer
 %define version		2.3.2
-%define rel		5
+%define rel		6
 %define release		%mkrel %{rel}
 
 Name:		%{name}
