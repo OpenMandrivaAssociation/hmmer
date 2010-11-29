@@ -1,6 +1,6 @@
 %define name		hmmer
 %define version		3.0
-%define rel		1
+%define rel		2
 %define release		%mkrel %{rel}
 
 Name:		%{name}
@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Summary:	Profile HMMs for protein sequence analysis
 Group:		Sciences/Biology
-License:	GPL
+License:	GPLv3
 URL:		http://hmmer.janelia.org
 Source:		ftp://selab.janelia.org/pub/software/%{name}/%{version}/%{name}-%{version}.tar.gz
 Patch:		%{name}-3.0.makefile.patch
