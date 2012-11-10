@@ -1,0 +1,18 @@
+diff -p -up ./Makefile.in.orig ./Makefile.in
+--- ./Makefile.in.orig	2010-03-28 14:35:17.000000000 +0000
++++ ./Makefile.in	2010-11-28 23:29:10.000000000 +0000
+@@ -180,10 +180,10 @@ install: libraries programs
+ 	for file in $(PROGS); do\
+ 	   cp ${SRCDIR}/$$file ${DESTDIR}${bindir}/;\
+ 	done
+-#	-mkdir -p ${DESTDIR}/${MANDIR}/man${MANSUFFIX}
+-#	-for file in hmmer $(PROGS); do\
+-#	   $(INSTMAN) documentation/man/$$file.man ${DESTDIR}$(MANDIR)/man$(MANSUFFIX)/$$file.$(MANSUFFIX);\
+-#	done
++	-mkdir -p ${DESTDIR}/usr/share/man/man1
++	-for file in hmmer $(PROGS); do\
++	   $(INSTMAN) documentation/man/$$file.man ${DESTDIR}/usr/share/man/man1/$$file.1;\
++	done
+ 
+ # uninstall: Reverses the steps of "make install".
+ #
