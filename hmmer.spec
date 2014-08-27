@@ -1,12 +1,13 @@
 Summary:	Profile HMMs for protein sequence analysis
 Name:		hmmer
 Version:	3.0
-Release:	3
+Release:	4
 License:	GPLv3+
 Group:		Sciences/Biology
 Url:		http://hmmer.janelia.org
 Source0:	ftp://selab.janelia.org/pub/software/%{name}/%{version}/%{name}-%{version}.tar.gz
-Patch:		%{name}-3.0.makefile.patch
+Patch1:		%{name}-3.0.makefile.patch
+Patch2:		hmmer-3.0-getopts.patch
 BuildRequires:	openmpi
 BuildRequires:	pkgconfig(ompi)
 
@@ -26,7 +27,8 @@ software for protein sequence analysis.
 
 %prep
 %setup -q
-%patch
+%patch1
+%patch2 -p1
 
 %build
 %configure2_5x --enable-mpi
