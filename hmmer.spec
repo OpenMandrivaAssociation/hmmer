@@ -1,7 +1,7 @@
 Summary:	Profile HMMs for protein sequence analysis
 Name:		hmmer
 Version:	3.0
-Release:	4
+Release:	5
 License:	GPLv3+
 Group:		Sciences/Biology
 Url:		http://hmmer.janelia.org
