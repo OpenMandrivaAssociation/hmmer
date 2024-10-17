@@ -4,7 +4,7 @@ Version:	3.0
 Release:	5
 License:	GPLv3+
 Group:		Sciences/Biology
-Url:		http://hmmer.janelia.org
+Url:		https://hmmer.janelia.org
 Source0:	ftp://selab.janelia.org/pub/software/%{name}/%{version}/%{name}-%{version}.tar.gz
 Patch1:		%{name}-3.0.makefile.patch
 Patch2:		hmmer-3.0-getopts.patch
