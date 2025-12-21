@@ -8,6 +8,11 @@ Url:		https://hmmer.janelia.org
 Source0:	ftp://selab.janelia.org/pub/software/%{name}/%{version}/%{name}-%{version}.tar.gz
 Patch1:		%{name}-3.0.makefile.patch
 Patch2:		hmmer-3.0-getopts.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	openmpi
 BuildRequires:	pkgconfig(ompi)
 
